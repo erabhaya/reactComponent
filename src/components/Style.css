@@ -1,0 +1,147 @@
+.upper{
+    background-image: url("./backgroundhead.png");
+}
+.headinghero{
+    display: flex;
+    margin-left:190px;
+}
+.welcome{
+    font-weight: 1000;
+    text-shadow:  1px 2px 15px black;
+    font-size: 40px;
+    width: 150%;
+}
+.unlimited{
+    font-size: 30px;
+    font-weight: 1000;
+    text-shadow:  1px 2px 15px black; 
+    width: 180%; 
+}
+.logo{
+    margin-left: 190px;
+    margin-top: 70px;
+    height: 80px;
+
+}
+.heroKey{
+    width: 70%;
+    margin-left:50px;
+}
+
+.form{
+    width: 65%; 
+    margin: auto;
+}
+.form > h2{
+    font-weight: 600;
+    font-size: 24px;
+}
+.form{
+    padding-top: 5%;
+    display: flex;
+    flex-direction: column;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+}
+.col{
+    width: 100%;
+}
+input{
+    padding: 30px;
+    border-radius: 10px;
+    background-color: #e9eaed;
+    border: none;
+    width: 80%;
+    margin: 0 5px 0 0 ;
+}
+input::placeholder{
+    color: black;
+    font-size: 16px;
+}
+.loginBTN{
+    padding: 15px 25px;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: blue;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+    width: 400px;
+  }
+
+.loginBTN:hover {background-color: blue}
+
+.button:active {
+    background-color: blue;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+  
+.back{
+    margin-top: 25px;
+    padding: 15px;
+    margin-left: 250px;
+}
+.divider{
+    border-bottom: 1px solid #b5b5b599;
+    width: 85%;
+    margin: auto;
+}
+.social_login, .account{
+    padding: 5% 0 7% 20%;
+
+}
+.account_btn{
+    padding: 15px 25px;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: blue;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+    width: 400px;
+}
+.account_btn:hover{background-color: blue}
+
+.h2{
+    margin-bottom: 4%;
+}
+.social_div{
+    background-color: #f0f0f0;
+    width: 145px;
+    padding: 18px 8px;
+    font-size: 13px;
+}
+.social_div:hover{
+    box-shadow: 0 40px 20px -20px rgb(0 0 0 / 30%);
+}
+.LogWE{
+    margin-left: 240px;
+}
+.forgot{
+    margin-top: 25px;
+}
+.col-login{
+    margin: 10px;
+}
+.googleicon{
+    width: 30px;
+}
+.googleiconText{
+  font-family: var(--ced-montserrat-m);
+  font-size: 12px;
+}
+.golgle{
+    width: 10%;
+    margin-left: 35px;
+    margin-top: -33px;
+    cursor: pointer;
+}
