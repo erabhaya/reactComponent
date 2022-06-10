@@ -132,6 +132,7 @@ input::placeholder{
 .col-login{
     margin: 10px;
 }
+/*google button hover*/
 .googleicon{
     width: 30px;
 }
@@ -140,8 +141,67 @@ input::placeholder{
   font-size: 12px;
 }
 .golgle{
-    width: 10%;
-    margin-left: 35px;
-    margin-top: -33px;
-    cursor: pointer;
+    /* width: 50%; */
+    /* height: 40px; */
+    margin-left: 45px;
+    margin-top: -32px;
 }
+
+/* Create a simple white box, and add the shadow for the initial state */
+.box {
+    position: relative;
+    display: inline-block;
+    width: 150px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.10);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+  }
+  
+  /* Create the hidden pseudo-element */
+  /* include the shadow for the end state */
+  .box::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  /* The fast way */
+  
+  .make-it-fast {
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  }
+  
+  
+  /* Pre-render the bigger shadow, but hide it */
+  
+  .make-it-fast::after {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  
+  /* Transition to showing the bigger shadow on hover */
+  
+  .make-it-fast:hover::after {
+    opacity: 1;
+  }
+  
+  /* Scale up the box */
+  .box:hover {
+    transform: scale(1.2, 1.2);
+  }
+  
+  /* Fade in the pseudo-element with the bigger shadow */
+  .box:hover::after {
+    opacity: 1;
+  }

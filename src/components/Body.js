@@ -26,7 +26,7 @@ export default function Body() {
                 </button>
               </div>
               <div className="col forgot">
-                <a href="#">Forgot Password ?</a>
+                <a href="">Forgot Password ?</a>
               </div>
             </div>
           </form>
@@ -39,8 +39,9 @@ export default function Body() {
       <div className="social_login">
         <h2 className="h2">Easy Social Login</h2>
            
-        <div className="signupIcon">
+        <div className="signupIcon box">
         <img className="googleicon" src="google-color.svg"></img>
+
         <span className="googleiconText">
             <div className="golgle">
           Sign Up with <strong>Google</strong>
